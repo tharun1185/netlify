@@ -1,4 +1,3 @@
-import React from 'react';
 import './healthcare.css'; // Import your CSS file
 
 const HealthcarePage = () => {
