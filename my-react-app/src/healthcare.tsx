@@ -6,7 +6,7 @@ const HealthcarePage = () => {
             {/* Header Section */}
             <header className="header-section">
                 <div className="container header-container">
-                    <a href="#" className="site-logo">MediCare</a>
+                    <a href="#" className="site-logo">Mental Health Platform</a>
                     <nav className="main-nav">
                         <ul>
                             <li><a href="#home">Home</a></li>
