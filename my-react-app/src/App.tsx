@@ -1,6 +1,6 @@
 import './App.css'
 import Page from './components/Page'
-import HealthcarePage from './healthcare'
+// import HealthcarePage from './healthcare'
 
 function App() {
 

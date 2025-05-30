@@ -1,13 +1,13 @@
 // src/components/Page.js
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import matter from "gray-matter";
 import { marked } from "marked";
 
-const Page = ({ file }) => {
-  const [content, setContent] = useState({ title: "", body: "" });
+const Page = (props: { file: any }) => {
+  const [content, setContent] = useState<any>({ title: "", body: "" });
 
   useEffect(() => {
-    fetch(file)
+    fetch(props.file)
       .then(res => res.text())
       .then(raw => {
         const parsed = matter(raw);
@@ -16,7 +16,7 @@ const Page = ({ file }) => {
           body: marked(parsed.content),
         });
       });
-  }, [file]);
+  }, [props?.file]);
 
   return (
     <div>
