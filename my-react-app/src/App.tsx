@@ -8,6 +8,7 @@ function App() {
     <>
      <div className="bg-gray-50 text-gray-800 font-inter">
       {/* <HealthcarePage /> */}
+      <h1>Welcome</h1>
       <Page file="/content/pages/home.md" />
      </div>
     </>
